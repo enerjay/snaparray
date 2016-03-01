@@ -1,1 +1,7 @@
 <h1> Snap Array</h1>
+
+<%= @snaps.each do |snap| %>
+<%= image_tag snap.image.url(:medium) %>
+
+
+<% end %>
