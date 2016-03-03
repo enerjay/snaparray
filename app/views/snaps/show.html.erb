@@ -1,0 +1,19 @@
+<div class="posts-wrapper row">
+  <div class="post">
+    <div class="post-head">
+      
+    </div>
+    <div class="image center-block">
+      <%= image_tag @snap.image.url(:medium) %>
+    </div>
+    <p class="caption">
+      <%= @snap.caption %>
+    </p>
+    <div class="text-center edit-links">
+      <%= link_to "Cancel", snaps_path %>
+      |
+      <%= link_to "Edit Snap", edit_snap_path(@snap) %>
+    </div>
+
+  </div>
+</div>
