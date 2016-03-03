@@ -49,5 +49,6 @@ group :development do
   gem 'simple_form', '~> 3.1.0' 
   gem 'country_select'
   gem 'bootstrap-sass', '~> 3.3.5'
+  gem 'devise'
 end
 
