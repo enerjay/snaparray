@@ -1,5 +1,6 @@
 class SnapsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
   def index
     @snaps = Snap.all
   end
@@ -23,7 +24,6 @@ class SnapsController < ApplicationController
   end
 
   
-
   def edit  
     @snap = Snap.find(params[:id])
   end
